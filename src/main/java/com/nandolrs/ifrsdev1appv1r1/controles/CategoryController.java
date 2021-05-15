@@ -44,9 +44,28 @@ public class CategoryController {
         return entidade;
     }
 
+
     @GetMapping(path="/all")
     public @ResponseBody Iterable<com.nandolrs.ifrsdev1appv1r1.dados.Category> getAllCategories() {
         // This returns a JSON or XML with the users
         return categoryRepository.findAll();
     }
+
+
+
+    @PostMapping(
+            value = "teste"
+            ,consumes = {MediaType.APPLICATION_JSON_VALUE}
+            ,produces = {MediaType.APPLICATION_JSON_VALUE}
+    ) // Map ONLY POST Requests
+    public @ResponseBody com.nandolrs.ifrsdev1appv1r1.dados.Category Teste (@RequestBody  com.nandolrs.ifrsdev1appv1r1.dados.Category entidade) {
+        // @ResponseBody means the returned String is the response, not a view name
+        // @RequestParam means it is a parameter from the GET or POST request
+
+
+
+
+        return entidade;
+    }
+
 }
