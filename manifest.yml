@@ -6,4 +6,6 @@ applications:
   path: ./target/ifrs-dev1-appv1r1.war
   random-route: true
   memory: 1GB
+  domain: mybluemix.net
+
 
