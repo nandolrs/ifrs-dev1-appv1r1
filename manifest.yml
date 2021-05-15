@@ -1,0 +1,4 @@
+---
+applications:
+- name: ifrs-dev1-appv1r1
+  buildpack: liberty-for-java
