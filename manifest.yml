@@ -1,8 +1,8 @@
 ---
 applications:
 - name: ifrs-dev1-appv1r1
-  #buildpack: liberty-for-java
-  buildpack: https://github.com/cloudfoundry/ibm-websphere-liberty-buildpack.git
+  buildpack: liberty-for-java
+  #buildpack: https://github.com/cloudfoundry/ibm-websphere-liberty-buildpack.git
   path: /target/ifrs-dev1-appv1r1.war
   random-route: true
   memory: 1GB
