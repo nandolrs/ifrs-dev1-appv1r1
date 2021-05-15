@@ -2,3 +2,5 @@
 applications:
 - name: ifrs-dev1-appv1r1
   buildpack: liberty-for-java
+  path: ./target/ifrs-dev1-appv1r1.war
+
